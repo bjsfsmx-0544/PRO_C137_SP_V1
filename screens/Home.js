@@ -27,8 +27,8 @@ export default class HomeScreen extends Component {
   }
 
   getData = async () => {
-    /*write code to fetch data from your flask API.
-     Store the fetched data in the state named data*/
+    /* Escribir el código para extraer los datos de la API FLask.
+       Almacena los datos extraídos en el estado llamado 'data' */
      
      const url = "https://3402-121-241-7-122.ngrok.io";
      axios
@@ -76,7 +76,7 @@ export default class HomeScreen extends Component {
 
   keyExtractor = (item, index) => index.toString();
 
-  /*this function selects a color for the cards on the flatlist*/
+  /* Esta función selecciona el color para las cartas de la FlatList*/
   selectColor = (index) => {
     var color = ["#fbffd5", "#ffefff", "#ede5ff", "#eafff4"];
     var num = index % 4;
