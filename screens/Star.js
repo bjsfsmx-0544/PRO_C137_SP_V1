@@ -27,9 +27,9 @@ export default class StarScren extends Component {
   }
 
   getStarDetails = (name) => {
-      /*write code to fetch data from your flask API.
-        Make sure to use name argument.
-        Store the fetched data in the state named data*/
+      /* Escribir el código para recuperar los datos de la API Flask.
+         Asegurarse de usar el argumento 'name'.
+         Almacenar los datos recuperados en el estado llamado 'data' */
   
     const url = `https://3402-121-241-7-122.ngrok.io/star?name=${name}`;
     axios
@@ -63,20 +63,20 @@ export default class StarScren extends Component {
           <View style={styles.middleContainer}>
             <View>
               <Text style={styles.text}>{data.mass}</Text>
-              <Text style={styles.text}>Mass</Text>
+              <Text style={styles.text}>Masa</Text>
             </View>
             <View>
               <Text style={styles.text}>{Math.round(data.gravity)}</Text>
-              <Text style={styles.text}>Gravity</Text>
+              <Text style={styles.text}>Gravedad</Text>
             </View>
             <View>
               <Text style={styles.text}>{data.radius}</Text>
-              <Text style={styles.text}>Radius</Text>
+              <Text style={styles.text}>Radio</Text>
             </View>
           </View>
           <View style={styles.lowerContainer}>
             <Text style={styles.text}>{data.distance}</Text>
-            <Text style={styles.text}>Distance from Earth</Text>
+            <Text style={styles.text}>Distancia a la Tierra</Text>
           </View>
         </ImageBackground>
       );
