@@ -96,7 +96,7 @@ export default class HomeScreen extends Component {
           }}
         />
         <View style={styles.headerContainer}>
-          <Text style={styles.headerTitle}>Stars</Text>
+          <Text style={styles.headerTitle}>Estrellas</Text>
         </View>
         {data.length > 0 ? (
           <View style={styles.upperContainer}>
